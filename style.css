@@ -1,0 +1,77 @@
+/*
+Theme Name: Themify Split Child
+Theme URI: kopaceticbeer
+Description: This is a child theme for Themify Split
+Author: Marc Allen
+Author URI: http://www.wanderroots.com
+Template: Themify-Split
+Version: 0.1
+*/
+
+div#site-logo a,
+div#site-description span,
+nav a{
+	font-family: 'Special Elite', cursive;
+}
+
+
+
+/*------------------------------------Paper Text---------------------------*/
+.text-paper{
+	color: #f4f4f4;
+}
+
+/*------------------------------------Paper Background---------------------------*/
+.background-paper{
+	background-color: #f4f4f4;
+}
+
+/*------------------------------------Yellow Text---------------------------*/
+.text-yellow,  
+#site-logo a, 
+a#menu-icon{
+  color: #eac67a;
+}
+
+/*------------------------------------Yellow Background---------------------------*/
+.background-yellow,  
+.back-top a {
+  background-color: #eac67a;
+}
+
+/*----------------------------------------Blue Text---------------------------*/ 
+.text-blue{
+  color: #18121e;
+}
+
+/*----------------------------------------Blue Background---------------------------*/
+.background-blue,
+#featured-post-overlay:hover{
+background-color: #18121e;
+}
+
+/*----------------------------------------Red Text---------------------------*/
+.text-red,  
+#site-logo a:hover, 
+a#menu-icon:hover{
+  color: #3c0a13;
+}
+
+/*--------------------------------------Red Background-------------------------*/
+.background-red, 
+.back-top a:hover{
+  background-color: #3c0a13;
+}
+
+/*-------------------------------------GunMetal Background--------------------*/
+.background-gunmetal, 
+#headerwrap, 
+#mobile-menu, 
+#footerwrap{
+  background-color: #233237;
+}
+
+/*-------------------------------------GunMetal Text--------------------*/
+.text-gunmetal{
+color: #233237;
+}

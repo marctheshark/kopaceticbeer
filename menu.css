@@ -1,0 +1,718 @@
+html{
+	background-color: #233237;
+}
+
+.split-loader{
+	background-color: #3c0a13;
+}
+
+/*----------------------------------------General Display------------------------------*/
+@media only screen and (max-width: 859px) {
+		div#main-splash{
+		background: url('../images/taps in.jpg') no-repeat center center scroll;
+		background-size: cover;
+		position: relative;
+		height: 800px;
+		top: 0;
+		padding-top: 5vh;
+		box-shadow: 5px 5px black;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+		div#main-splash{
+		background: url('../images/taps in.jpg') no-repeat center center scroll;
+		background-size: cover;
+		position: relative;
+		height: 120vh;
+		top: 0;
+		padding-top: 5vh;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	div#location{
+		background: url('../images/Paper-6-horizontal.jpg') no-repeat center center fixed;
+		background-size: cover;
+	}
+}
+
+@media only screen and (max-width: 859px) {
+	div#location{
+		background: url('../images/Paper-6-vertical.jpg') no-repeat center center fixed;
+		background-size: cover;
+		position: relative;
+	}
+}
+
+
+div.page-contents{
+	background-color: #3c0a13;
+	width: 100%;
+}
+
+/*---------------------------------------------------Location Display------------------------------------*/
+
+@media only screen and (max-width: 939px){
+	#location{
+		width: 100%;
+	}
+
+	#location > div {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	#location > div > h1{
+		padding-top: 10%;
+		color: #3c0a13;
+		text-align: center;
+	}
+
+	#hours li,
+	#address li{
+		text-align: center;
+		list-style: none;
+		font-family: 'Special Elite', cursive;
+		font-size: 20px;
+		color: #1e1e1e;
+	}
+
+	#address{
+		padding-bottom: 12%;
+	}
+
+	#map{
+		width: 100vw;
+		height: 100vw;
+		max-height: 450px;	
+	}
+
+	#building-image{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 940px){
+	#location{
+		width: 100vw;
+		height: 35vw;
+		alignment-baseline: text-top;
+	}
+
+	#location > div {
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		vertical-align: middle;
+	}
+
+	#hours,
+	#address{
+		width: 33vw;
+	}
+
+	#map{
+		display: inline-block;
+		position: relative;
+		right: 0;
+		width: 32.5vw;
+		height: 35vw;
+		background-color: black;
+		margin: 0;
+	}
+
+	iframe{
+		padding: 0;
+		margin: 0;
+	}
+
+	#location h1{
+		color: #3c0a13;
+		text-align: center;
+		font-size: 35px;
+		alignment-baseline: text-top;
+	}
+
+	#brewery-hours{
+		margin-bottom: 10%;
+	}
+
+	#hours li,
+	#address li{
+		text-align: center;
+		list-style: none;
+		font-family: 'Special Elite', cursive;
+		font-size: 18px;
+		color: #1e1e1e;
+	}
+
+	#address{
+		display: inline-block;
+	}
+}
+
+
+/*-------------------------------------------------Headings-----------------------------*/
+h1{
+	font-size: 50px;
+	font-family: 'Special Elite', cursive;
+}
+
+h2{
+	font-size: 30px;
+	font-family: 'Special Elite', cursive;
+}
+/*----------------------------------------Featured Post---------------------------------*/
+
+
+/*-----------------------------------------------Carousel Styling------------------------------*/
+.closed{
+	right: -1000px !important;
+}
+
+div.carousel-slide,
+img.featured-image,
+div.title-div{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+a.featured-link{
+	display: inline-block;
+	position: absolute;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	color: white;
+}
+
+.featured-button {
+	position: absolute;
+	bottom: 0;
+}
+@media only screen and (max-width: 859px) {
+	div.featured-carousel{
+		position: absolute;
+		top: 190px;
+		width: 80vw;
+		height: 80vw;
+		max-width: 500px;
+		max-height: 500px;
+		right: 10vw;
+		border-radius: 15px 15px 15px 15px;	
+	}
+
+	div.carousel-slide{
+		border-radius: 15px 15px 15px 15px;
+		max-width: 500px;
+		max-height: 500px;
+		height: 80vw;
+		width: 80vw;
+	}
+
+	img.featured-image{
+		border-radius: 15px 15px 15px 15px;
+		max-width: 500px;
+		max-height: 500px;
+		height: 80vw;
+		width: 80vw;
+	}
+
+	div.title-div{
+		border-radius: 15px 15px 0 0;
+		width: 100%;
+		min-height: 10vw;
+		max-height: 14vw;
+		background-color: black;
+		opacity: 0.5;
+		align-content: center;
+	}
+
+	a.featured-link{
+		width: 90%;
+		max-width: 500px;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 4vw;
+		left: 0;
+
+	}
+
+	.featured-button{
+		padding: 1vw;
+		width: 40vw;
+		left: 20vw;
+		border-radius: 8px 8px 0 0;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	div.featured-carousel{
+		position: absolute;
+		top: 15vh;
+		right: 0;
+		width: 50vh;
+		height: 50vh;
+		border-radius: 20px 0 0 20px;
+	}
+
+	div.carousel-slide{
+		border-radius: 20px 0 0 20px;
+		height: 50vh;
+		width: 50vh;
+	}
+
+	img.featured-image{
+		border-radius: 20px 0 0 20px;
+		height: 50vh;
+		width: 50vh;
+	}
+
+	div.title-div{
+		border-radius: 20px 0 0 0;
+		min-height: 8vh;
+		max-height: 12vh;
+		background-color: black;
+		opacity: 0.5;
+		width: 50vh;
+	}
+
+	a.featured-link{
+		width: 47vh;
+		padding: 1vh 1vh;
+		font-size: 3vh;
+
+	}
+
+	.featured-button{
+		padding: 10px;
+		width: 20vh;
+		left: 15vh;
+		border-radius: 10px 10px 0 0;
+	}
+}
+
+/*--------------------------------------------Buttons--------------------------------------*/
+.side-button, .featured-button{
+    font-family: 'Special Elite', cursive;
+}
+
+.side-button{
+	display: block;
+    position: relative;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    left: -250px;
+    z-index: 150;
+    margin-top: 10px;
+}
+
+.side-button, 
+.featured-button, 
+.menu-is-open{
+	background-color: #3c0a13;
+	color: #eac67a;
+}
+
+.side-button:hover, 
+.featured-button:hover, 
+.menu-is-open:hover{
+	cursor: pointer;
+	background-color: #eac67a;
+	color: #3c0a13;
+}
+
+@media only screen and (max-width: 859px) {
+	.side-button:hover, .featured-button:hover{
+		font-size: 14px;
+	}
+
+	.side-button:hover, .featured-button:hover{
+		font-size: 16px;
+	}
+
+	#menu-is-closed{
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	.side-button, .featured-button{
+		font-size: 18px;
+	}
+
+	.side-button:hover, .featured-button:hover{
+		font-size: 20px;
+	}
+
+	#menu-is-closed{
+		margin-top: 60px;
+	}
+}
+/*
+#menu-is-closed{
+
+}
+
+#packaged-menu-closed{
+}
+
+#spirits-menu-closed{
+}
+*/
+@media only screen and (max-width: 859px) {
+	.menu-is-open{
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	    position: absolute;
+	    width: 50px;
+	    height: 30px;
+	    top: -28px;
+	    right: calc(50% - 25px);
+	    z-index: 1;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	.menu-is-open{
+		border-radius: 50%;
+	    position: absolute;
+	    width: 50px;
+	    height: 50px;
+	    top: -25px;
+	    right: -25px;
+	    z-index: 1;
+	}
+}
+
+/*--------------------------------------------Buttons--------------------------------------*/
+
+
+/*---------------------------------------------Menu-All------------------------------------*/
+#beer-menu,
+#packaged-menu,
+#spirits-menu{
+	position: absolute;
+	top: -2000px;
+	z-index: 5;
+	color: white;
+	font-family: 'Cabin Sketch', cursive;
+	box-shadow: 5px 5px 5px black;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/*---------------------------------------------Menu-All----------------------------------------------------*/
+/*-------------------------------------Packaged and Spirits Menu Small--------------------------------------*/
+ul.packaged-menu-content:nth-of-type(odd),
+ul.spirits-menu-content:nth-of-type(odd){
+	color: #efe675;
+}
+
+ul.packaged-menu-content:nth-of-type(even),
+ul.spirits-menu-content:nth-of-type(even){
+	color: #668ec2;
+}
+
+@media only screen and (max-width: 859px) {
+	div#packaged-menu,
+	div#spirits-menu{
+		background-image: url('../images/packaged beer tall.jpg');
+		width: 320px;
+		left: calc(50% - 160px);
+		top: -2000px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin: 0;
+	}
+
+	p#packaged-menu-title,
+	p#spirits-menu-title{
+		font-size: 25px;
+		text-align: center;
+		font-style: 'Cabin Sketch', cursive;
+		margin-bottom: 5px;
+		padding-bottom: 0;
+	}
+
+	ul.packaged-menu-header,
+	ul.spirits-menu-header{
+		text-align: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.spirits-menu-header li:last-child,
+	.spirits-menu-content li:last-child{
+		width: 9.5%;
+	}
+
+	ul.spirits-menu-content:last-child li:last-child{
+		width: 19%;
+	}
+
+	.packaged-menu-header li{
+		display: inline-block;
+		width: 23%;
+		vertical-align: text-top;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		font-size: 14px;
+	}
+
+	.spirits-menu-header li {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		display: inline-block;
+		font-size: 12px;
+		width: 20%;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 0;
+		vertical-align: text-top;
+	}
+
+	ul.packaged-menu-content,
+	ul.spirits-menu-content{
+		text-align: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.packaged-menu-content li{
+		font-size: 11px;
+		display: inline-block;
+		width: 23%;
+		vertical-align: text-top;
+	}
+
+	.spirits-menu-content li{
+		font-size: 10px;
+		display: inline-block;
+		width: 20%;
+		vertical-align: text-top;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+}
+/*----------------------------------------------------Packaged and Spirits Menu Large-------------------------------------------*/
+@media only screen and (min-width: 860px) {
+	div#packaged-menu,
+	div#spirits-menu{
+		background-image: url('../images/packaged beer large.jpg');
+		background-size: 100%;
+		width: 90%;
+		left: 5%;
+		padding: 10px;
+		margin: 0;
+	}
+
+	p#packaged-menu-title,
+	p#spirits-menu-title{
+		font-size: 50px;
+		text-align: center;
+		font-style: 'Cabin Sketch', cursive;
+		margin-bottom: 15px;
+		padding-bottom: 0;
+	}
+
+	ul.packaged-menu-header,
+	ul.spirits-menu-header{
+		text-align: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.spirits-menu-header li:last-child,
+	.spirits-menu-content li:last-child{
+		width: 9.5%;
+	}
+
+	ul.spirits-menu-content:last-child li:last-child{
+		width: 19%;
+	}
+
+	.packaged-menu-header li{
+		display: inline-block;
+		width: 23%;
+		vertical-align: text-top;
+		font-size: 30px;
+	}
+
+	.spirits-menu-header li {
+		margin-top: 1px;
+		margin-bottom: 1px;
+		display: inline-block;
+		font-size: 30px;
+		width: 20%;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 0;
+		vertical-align: text-top;
+	}
+
+	ul.packaged-menu-content,
+	ul.spirits-menu-content{
+		text-align: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.packaged-menu-content li{
+		font-size: 18px;
+		display: inline-block;
+		width: 23%;
+		vertical-align: text-top;
+	}
+
+	.spirits-menu-content li{
+		font-size: 18px;
+		display: inline-block;
+		width: 20%;
+		vertical-align: text-top;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+}
+
+
+/*--------------------------------------------Draft - Menu - Small-----------------------------------*/
+@media only screen and (max-width: 859px) {
+
+	#beer-menu.chalkboard{
+		background-image: url('../images/beer menu title.jpg');
+		padding-top: 93px;
+		background-size: 100%;
+		width: 320px;
+		height: 93px;
+		left: calc(50% - 160px);
+	}
+
+	div.menu-row-1{
+		position: relative;
+		width: 320px;
+		background-image: url('../images/beer menu row 1.jpg');
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	div.menu-row-2{
+		width: 320px;
+		padding-top: 30px;
+		background-image: url('../images/beer menu row 2.jpg');
+		margin: 0;
+		padding-top: 38px;
+		z-index: 2;
+	}
+
+	ul.beer-column{
+		margin: 0;
+		margin-right: 3px;
+		list-style: none;
+		width: 48%;
+		font-size: 16px;
+		display: inline-block;
+		text-align: center;
+		vertical-align: text-top;
+		z-index: 4;
+	}
+
+	ul.last-beer-column{
+	}
+
+
+
+	li{
+		line-height: 95%;
+		margin-bottom: 6px;
+	}
+
+}
+/*--------------------------------------------Menu-Small-----------------------------------*/
+
+
+/*--------------------------------------------Menu-Large-----------------------------------*/
+/* This is where the CSS for full-size begins.
+*/
+@media only screen and (min-width: 860px) {
+
+	div.chalkboard-large{
+		left: 5%;
+		width: 90%;
+		background-image: url('../images/Craft Beer Board.jpg');
+		margin: 0 auto;
+		padding-top: 16%;
+	}
+
+	div.menu-row-1,
+	div.menu-row-2{
+		display: inline-block;
+		min-height: 240px;
+		max-height: 480px;
+		padding: 0;
+	}
+
+	div.menu-row-1{
+		width: 49.5%;
+	}
+
+	div.menu-row-2{
+		width: 50%;
+	}
+
+	ul.beer-column-large{
+		display: inline-block;
+		list-style: none;
+		vertical-align: text-top;
+		font-size: 18px;
+		text-align: center;
+		width: 49.5%;
+		padding-bottom: 1%;
+		margin: 0;
+	}
+
+	ul.last-beer-column-large{
+		margin: 0 0 0 1.5%;
+		width: 48%;
+	}
+
+	li{
+		line-height: 95%;
+		margin-bottom: 8px;
+	}
+}
+
+@media only screen and (min-width: 1050px) {
+	ul.beer-column-large{
+		font-size: 22px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	ul.beer-column-large{
+		font-size: 25px;
+	}
+}
+/*--------------------------------------------Menu-Large-----------------------------------*/
